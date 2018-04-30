@@ -1,0 +1,22 @@
+group 'kayadeadechinan'
+version '1.0'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    // mysql connector
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.6'
+
+    // mongodb driver
+    compile 'org.mongodb:mongo-java-driver:3.6.3'
+
+
+}
